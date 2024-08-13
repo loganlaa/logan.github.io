@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,9 +18,73 @@
 </head>
 
 <body>
-    <h1>Teste</h1>
-    <ion-icon name="heart"></ion-icon>
-    <i class="devicon-amazonwebservices-plain-wordmark"></i>
+    <main id="container">
+        <!--Parte lateral esquerda-->
+        <aside id="bio-container"> <!--Tipo uma div que usa para conteudos secundarios do site-->
+            <h2>Lôgan Alvim Araújo</h2>
+            <img src="img/perfil.JPEG.JPG" alt="Lôgan Alvim Araújo">
+            <p>Olá, meu nome é Lôgan e sou <span class="highlight">desenvolvedor AWS Júnior</span></p>
+            <p id="welcome-text">Seja bem-vindo!</p>
+            <ul id="social-container">
+                <li><a href="https://www.linkedin.com/in/loganlaa" target="_blank"><ion-icon
+                            name="logo-linkedin"></ion-icon></a></li>
+                <!--Quando clica, ele nao sai do portifolio e abre uma nova aba-->
+            </ul>
+            <div id="email-container">
+                <ion-icon name="mail-outline"></ion-icon><a
+                    href="mailto:logan.alvima@gmail.com">logan.alvima@gmail.com</a>
+                <!--Vai usar o software padrao para abrir o email, ao inves de abrir uma nova guia-->
+            </div>
+        </aside>
+
+        <!--Parte centro-direita-->
+        <section id="about-container">
+            <h1 id="name">Logan Alvim Araújo</h1>
+            <p id="title"><span class="highlight">Desenvolvedor Python AWS</span></p>
+            <p class="description">Estou iniciando na programacao em python, focado no desenvolvimento de <span
+                    class="highlight">backend</span> e <span class="highlight">aplicacoes serverless</span>.</p>
+            <p class="description">Atuo tanto no <span class="highlight">backend</span> quanto no <span
+                    class="highlight">frontend</span> e estudo todos os dias para produzir codigos de qualidade</p>
+            <a href="https://github.com/loganlaa" id="btn--projects"><ion-icon
+                    name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
+            <h2 id="skills-section-title">Minhas Skills</h2>
+            <p class="description">Conheca as tecnologias que domino:</p>
+            <div id="skills-container">
+                <div class="skills-box">
+                    <p class="skills-title">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
+
+                <div class="skills-box">
+                    <p class="skills-title">Back-end</p>
+                    <i class="devicon-python-plain colored"></i>
+                </div>
+
+                <div class="skills-box">
+                    <p class="skills-title">Cloud</p>
+                    <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                </div>
+
+                <div class="skills-box">
+                    <p class="skills-title">Frameworks</p>
+                    <i class="devicon-django-plain colored"></i>
+                    <i class="devicon-djangorest-plain colored"></i>
+                </div>
+
+                <div class="skills-box">
+                    <p class="skills-title">Ferramentas</p>
+                    <i class="devicon-docker-plain colored"></i>
+                    <i class="devicon-linux-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-github-original colored"></i>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
 
     <!--Ion icon instalação-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
