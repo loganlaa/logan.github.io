@@ -1,7 +1,8 @@
-* {
-    font-family: 'Roboto', sans-serif;
-}
+/* General */
 
-h1 {
-    color: red;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; /*as boxes respeitam a area limite*/
 }
