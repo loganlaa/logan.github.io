@@ -200,3 +200,56 @@
     border-radius: 50%; /* Deixa a imagem redonda */
     margin-bottom: 25px;
 }
+
+/* Mobile - Deixando o projeto responsivo */
+
+@media(max-width: 450px) { /* Define um breakpoint de que ABAIXO de 450px de largura, vai ter estilos diferentes */ 
+    
+    
+    #container {
+        flex-direction: column;
+        }
+
+    #bio-container {
+        min-height: auto; /* Container da Bio nao tem altura mínima, vai ser automático */
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    #bio-container h2 {
+        display: none;
+    }
+
+    #bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+
+    #about-container {
+        text-align: center;
+        padding: 30px;
+    }
+
+    #about-container .description {
+        margin: 10px auto; /* Esse auto alinha, porque deixa as margens laterais automáticas */
+        max-width: 100%; /* 100% do container pai dele */
+        line-height: 26px; /* Espacamento entre as linhas */
+    }
+
+    #btn--projects {
+        margin: 20px auto;
+    }
+
+    .skills-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    #skills-box i {
+        font-size: 60px;
+    }
+
+
+}
